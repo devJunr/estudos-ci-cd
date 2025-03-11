@@ -2,7 +2,7 @@ name: Testando o código
 
 run-name: Testando funções do código usando Jest (JavaScript)
 
-on: [pull_request, fork, push]
+on: [pull_request, fork]
 
 jobs:
     verificaFuncao:

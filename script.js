@@ -3,7 +3,7 @@ const soma = (a,b) =>{
 };
 
 const subtrair = (a,b) =>{
-    return (a - b) + 9;
+    return (a - b);
 };
 
 module.exports = { soma, subtrair };
