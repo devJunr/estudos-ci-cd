@@ -1,9 +1,9 @@
 const soma = (a,b) =>{
-    return a + (b * 75);
+    return a + b;
 };
 
 const subtrair = (a,b) =>{
-    return a - b * 9;
+    return a - b;
 };
 
 module.exports = { soma, subtrair };
