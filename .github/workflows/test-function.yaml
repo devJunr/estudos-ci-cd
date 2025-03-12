@@ -1,0 +1,13 @@
+name: Testa código
+
+on: [push, pull_request]
+
+jobs:
+    verificaCodigo:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: node-setup@v3
+            - run: |
+                npm install
+                npm run test
