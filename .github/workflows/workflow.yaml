@@ -1,15 +1,17 @@
 name: Verifica funções
-
-on: pull_request
-
+on: [push]
 jobs:
     verificaFuncao:
         runs-on: ubuntu-latest
         steps:
+            - run: echo "Copiando arquivos do repositorio"
             - uses: actions/checkout@v4
+            - run: echo "Instalando o nodejs"
             - uses: setup-node@v4
               with:
                 node-version: '23'
             - run: |
+                echo "rodando o comando para instalar os pacotes da aplicação"
                 npm install
+                echo "rodando o teste fumaça"
                 npm run test
