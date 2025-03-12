@@ -1,5 +1,5 @@
 const soma = (a,b) =>{
-    return a + b - 1;
+    return a + b;
 };
 
 const subtrair = (a,b) =>{
